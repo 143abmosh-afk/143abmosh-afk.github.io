@@ -1,0 +1,206 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+line-height:1.6;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#111827;
+padding:18px 8%;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.4);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+section{
+padding:110px 8%;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+min-height:100vh;
+gap:50px;
+}
+
+.hero-left h1{
+font-size:55px;
+margin:10px 0;
+}
+
+.hero-left h2{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.hero-left p{
+max-width:550px;
+margin-bottom:25px;
+}
+
+.hero-left a{
+display:inline-block;
+margin-right:15px;
+padding:12px 24px;
+background:#38bdf8;
+color:#000;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.hero-left a:hover{
+transform:translateY(-3px);
+}
+
+.hero-right img{
+width:340px;
+border-radius:50%;
+border:6px solid #38bdf8;
+box-shadow:0 0 30px rgba(56,189,248,.4);
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.skills-grid,
+.project-card,
+.education-card{
+margin-bottom:25px;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+text-align:center;
+transition:.3s;
+}
+
+.skill-card:hover{
+transform:translateY(-6px);
+background:#2563eb;
+}
+
+.project-card,
+.education-card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+}
+
+.project-card:hover,
+.education-card:hover{
+transform:translateY(-5px);
+transition:.3s;
+}
+
+#certificates ul{
+list-style:none;
+}
+
+#certificates li{
+background:#1e293b;
+padding:18px;
+margin:12px 0;
+border-radius:10px;
+}
+
+#contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+footer{
+background:#111827;
+padding:25px;
+text-align:center;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-right img{
+width:250px;
+margin-top:30px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero-left h1{
+font-size:38px;
+}
+
+}
