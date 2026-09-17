@@ -15,6 +15,9 @@ color:#fff;
 line-height:1.6;
 }
 
+
+/* ================= HEADER ================= */
+
 header{
 position:fixed;
 top:0;
@@ -54,9 +57,27 @@ nav ul li a:hover{
 color:#38bdf8;
 }
 
+
+/* ================= SECTIONS ================= */
+
 section{
 padding:110px 8%;
 }
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+
+/* ================= HERO ================= */
 
 .hero{
 display:flex;
@@ -66,12 +87,17 @@ min-height:100vh;
 gap:50px;
 }
 
+.hero-left{
+flex:1;
+}
+
 .hero-left h1{
 font-size:55px;
 margin:10px 0;
 }
 
 .hero-left h2{
+text-align:left;
 color:#38bdf8;
 margin-bottom:15px;
 }
@@ -97,30 +123,26 @@ transition:.3s;
 transform:translateY(-3px);
 }
 
+
+/* ================= PROFILE PHOTO ================= */
+
+.hero-right{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
 .hero-right img{
 width:340px;
+height:340px;
+object-fit:cover;
 border-radius:50%;
 border:6px solid #38bdf8;
 box-shadow:0 0 30px rgba(56,189,248,.4);
 }
 
-.container{
-max-width:1200px;
-margin:auto;
-}
 
-h2{
-text-align:center;
-font-size:38px;
-margin-bottom:40px;
-color:#38bdf8;
-}
-
-.skills-grid,
-.project-card,
-.education-card{
-margin-bottom:25px;
-}
+/* ================= SKILLS ================= */
 
 .skills-grid{
 display:grid;
@@ -134,6 +156,7 @@ padding:20px;
 border-radius:10px;
 text-align:center;
 transition:.3s;
+font-weight:500;
 }
 
 .skill-card:hover{
@@ -141,18 +164,113 @@ transform:translateY(-6px);
 background:#2563eb;
 }
 
-.project-card,
+
+/* ================= PROJECTS ================= */
+
+.project-card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+margin-bottom:25px;
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+}
+
+.project-card h3{
+color:#38bdf8;
+margin-bottom:12px;
+}
+
+.project-card p{
+margin-bottom:15px;
+}
+
+.project-card a{
+display:inline-block;
+margin-top:5px;
+padding:9px 18px;
+background:#38bdf8;
+color:#000;
+border-radius:7px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.project-card a:hover{
+transform:translateY(-3px);
+}
+
+
+/* ================= VLOGS & BLOGS ================= */
+
+.blog-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.blog-card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+transition:.3s;
+}
+
+.blog-card:hover{
+transform:translateY(-6px);
+background:#2563eb;
+}
+
+.blog-card h3{
+color:#38bdf8;
+margin-bottom:12px;
+}
+
+.blog-card p{
+margin-bottom:20px;
+}
+
+.blog-card a{
+display:inline-block;
+padding:9px 18px;
+background:#38bdf8;
+color:#000;
+border-radius:7px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.blog-card a:hover{
+transform:translateY(-3px);
+}
+
+
+/* ================= EDUCATION ================= */
+
 .education-card{
 background:#1e293b;
 padding:25px;
 border-radius:12px;
-}
-
-.project-card:hover,
-.education-card:hover{
-transform:translateY(-5px);
+margin-bottom:25px;
 transition:.3s;
 }
+
+.education-card:hover{
+transform:translateY(-5px);
+}
+
+.education-card h3{
+color:#38bdf8;
+margin-bottom:8px;
+}
+
+
+/* ================= CERTIFICATES ================= */
 
 #certificates ul{
 list-style:none;
@@ -165,10 +283,20 @@ margin:12px 0;
 border-radius:10px;
 }
 
+
+/* ================= CONTACT ================= */
+
 #contact a{
 color:#38bdf8;
 text-decoration:none;
 }
+
+#contact a:hover{
+text-decoration:underline;
+}
+
+
+/* ================= FOOTER ================= */
 
 footer{
 background:#111827;
@@ -176,6 +304,9 @@ padding:25px;
 text-align:center;
 margin-top:50px;
 }
+
+
+/* ================= MOBILE ================= */
 
 @media(max-width:768px){
 
@@ -186,6 +317,7 @@ text-align:center;
 
 .hero-right img{
 width:250px;
+height:250px;
 margin-top:30px;
 }
 
@@ -197,10 +329,20 @@ gap:15px;
 nav ul{
 flex-wrap:wrap;
 justify-content:center;
+gap:15px;
 }
 
 .hero-left h1{
 font-size:38px;
+}
+
+.hero-left h2{
+text-align:center;
+}
+
+.hero-left p{
+margin-left:auto;
+margin-right:auto;
 }
 
 }
