@@ -346,3 +346,73 @@ margin-right:auto;
 }
 
 }
+/* =========================================
+   NEON BLUE + PURPLE SKILLS THEME
+========================================= */
+
+.skill-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: all 0.35s ease;
+
+    border: 1px solid rgba(0, 191, 255, 0.12);
+    background: linear-gradient(
+        135deg,
+        rgba(0, 191, 255, 0.08),
+        rgba(120, 70, 255, 0.08)
+    );
+}
+
+/* Icons */
+
+.skill-card i {
+    font-size: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #00d9ff,
+        #8b5cf6
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    transition: all 0.35s ease;
+}
+
+/* Text */
+
+.skill-card span {
+    color: #e8f7ff;
+    font-weight: 500;
+}
+
+/* Hover */
+
+.skill-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(139, 92, 246, 0.75);
+
+    background: linear-gradient(
+        135deg,
+        rgba(0, 217, 255, 0.15),
+        rgba(139, 92, 246, 0.15)
+    );
+
+    box-shadow:
+        0 0 15px rgba(0, 217, 255, 0.25),
+        0 0 30px rgba(139, 92, 246, 0.18);
+}
+
+.skill-card:hover i {
+    transform: scale(1.2);
+
+    filter:
+        drop-shadow(0 0 6px #00d9ff)
+        drop-shadow(0 0 10px #8b5cf6);
+}
